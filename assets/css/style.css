@@ -1,0 +1,423 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap");
+
+html {
+  font-size: 78.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+  list-style-type: none;
+}
+#bar::before {
+  display: none;
+}
+#bar::after {
+  display: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+body {
+  width: 100%;
+}
+nav {
+  width: 100%;
+  background: white;
+  box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.nav1 {
+  width: 80%;
+  margin: 0 auto;
+
+  padding: 13px;
+}
+.nav1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.link {
+  display: flex;
+  gap: 35px;
+}
+.food {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.food h1 {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: #666;
+}
+.food i {
+  color: red;
+}
+.link a {
+  text-decoration: none;
+  color: grey;
+}
+.link a:hover {
+  color: red;
+}
+
+#bar {
+  border: 9px solid grey;
+  padding: 6px;
+}
+@media screen and (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .bar {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .link {
+    display: block;
+    border: 2px solid red;
+  }
+  .bar {
+    display: flex;
+  }
+}
+
+main {
+  width: 100%;
+  position: absolute;
+  top: 50;
+  left: 0;
+  background: #f7f7f7;
+}
+.special {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 18px;
+  margin-bottom: 7px;
+  font-size: 13px;
+  font-weight: light;
+  color: grey;
+}
+.special span {
+  color: red;
+}
+.bakkery {
+  width: 80%;
+
+  margin: 0 auto;
+}
+.burger {
+  width: 31.4%;
+
+  margin: 8px;
+  border: 2px solid white;
+  box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 1);
+  padding-top: 55px;
+  padding-bottom: 37px;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+.bakkery1 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.bakkery1 i {
+  margin: 20px;
+  color: red;
+}
+.burger p {
+  margin-top: 15px;
+  color: grey;
+}
+.burger:hover {
+  background: url("../images/chat.jpg") no-repeat center center/cover;
+  cursor: pointer;
+  transition: all 1s linear;
+}
+.burger p:hover {
+  color: white;
+}
+
+.popular {
+  width: 80%;
+  margin: 0 auto;
+}
+.popular h1 {
+  text-align: center;
+  margin: 10px;
+}
+
+.pop2 {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pop1 {
+  width: 31.4%;
+  border: 2px solid white;
+  box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 1);
+  margin: 8px;
+  padding-bottom: 10px;
+  border-radius: 3px;
+  position: relative;
+}
+.pop1 img {
+  margin-top: 20px;
+  width: 300px;
+  height: 250px;
+
+  z-index: -6;
+}
+.rupee {
+  position: absolute;
+  top: 25;
+  left: 39px;
+  color: white;
+  background: red;
+  padding: 7px 10px;
+}
+.pop1 h3 {
+  font-size: 19px;
+  margin: 14px;
+}
+.button {
+  display: grid;
+}
+.btn1 {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  border: 3px solid red;
+  display: block;
+  min-width: 130px;
+  margin: 17px auto;
+  padding: 8px;
+  color: red;
+  font-size: 14px;
+  border-radius: 4px;
+}
+.rup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: red;
+  z-index: 19px;
+}
+
+.popular h1 {
+  color: grey;
+}
+span {
+  color: red;
+}
+.it {
+  width: 100%;
+}
+.work {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 40px;
+  gap: 20px;
+}
+.work h1 {
+  color: grey;
+}
+.work2 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+  gap: 80px;
+}
+.work1 p {
+  width: 150px;
+  font-weight: bold;
+}
+.work1 img {
+  border: 8px solid white;
+  box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 1);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.read {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+.img img {
+  width: 31%;
+  height: 300px;
+  margin: 15px;
+  margin-top: 25px;
+}
+.read img {
+  border-radius: 8px solid white;
+}
+.img {
+  display: flex;
+}
+.tasty {
+  display: none;
+}
+
+.review {
+  width: 80%;
+  margin: 0 auto;
+}
+.rev1 {
+  display: flex;
+}
+.rev {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -10px;
+}
+.review1 {
+  width: 33%;
+}
+.review1 img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 9px solid white;
+  box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 1);
+}
+.review1 p {
+  line-height: 20px;
+}
+.h1 {
+  text-align: center;
+  margin: 25px;
+  color: grey;
+}
+.ground {
+  box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 1);
+  border-radius: 3px;
+  background: black;
+  color: white;
+  margin-left: 20px;
+  padding: 30px;
+
+  padding-top: 80px;
+  display: grid;
+  row-gap: 14px;
+  border: 7px solid white;
+  margin-top: -65px;
+}
+.star {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+.pic {
+  width: 78%;
+  margin: 0 auto;
+  margin-top: -20px;
+}
+.pic1 img {
+  width: 380px;
+  height: 380px;
+  border: 7px solid white;
+}
+.class {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.pic1 {
+  display: flex;
+  gap: 20px;
+  border-radius: 3px;
+  background: white;
+  box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 1);
+}
+.pic2 {
+  width: 59%;
+}
+.pic2 input[type="number"] {
+  width: 47.6%;
+  height: 50px;
+}
+.pic2 input[type="text"] {
+  width: 47.6%;
+  height: 50px;
+}
+.pic3 {
+  display: flex;
+  padding-top: 22px;
+  gap: 15px;
+}
+.pic4 {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.write {
+  border: 2px solid grey;
+  padding: 7px;
+  color: grey;
+  border-radius: 3px;
+}
+.pic2 p {
+  display: block;
+  border-radius: 3px;
+  max-width: 100px;
+  margin-top: 10px;
+
+  background-color: red;
+  padding: 10px;
+  color: white;
+  
+  text-align: center;
+}
+.pic2 p:hover {
+  background: rgb(255, 119, 0);
+  animation: animationname 5s infinite alternate;
+  color: white;
+  cursor: pointer;
+}
+@keyframes animationname {
+  0% {
+    transform: translateX(-3);
+  }
+  30% {
+    transform: translateX(-3);
+  }
+  60% {
+    transform: translateX(-3);
+  }
+  80% {
+    transform: translateX(-3);
+  }
+  100% {
+    transform: translateX(-3);
+  }
+}
